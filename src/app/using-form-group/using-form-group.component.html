@@ -1,0 +1,31 @@
+<div class="mt-2 p-4 bg-secondary text-white rounded">
+    <h2>Reactive form</h2>
+</div>
+<div class="container">
+    <form [formGroup]="userForm">
+        <div class="row">
+            <div class="col-4">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" formControlName="username">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" formControlName="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <Button class="btn btn-success" (click)="onSaveUser()">Submit</Button>
+            </div>
+        </div>
+
+    </form>
+</div>
